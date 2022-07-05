@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* 
+font-family: 'Manrope', sans-serif;
+font-family: 'Montserrat', sans-serif;
+ */
+
+/* Global Utility */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+    --main-color: #FBA24F;
+    --gray: #828282;
+    --secondary-gray: #707070;
+    --black: #000000;
+    --secondary-black: #18191F;
+    --white: #FFFFFF;
+    --footer-color: #0B0D17;
+    --footer-text-color: #5B5B5B;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    padding: 16px 32px;
+    border-radius: 100px;
+    border: none;
+    background: linear-gradient(88.33deg, #FBA24F -7.64%, #FF1E1E 145.94%);
+    box-shadow: 0px 2px 30px rgba(252, 143, 73, 0.5);
+}
+
+.btn a {
+    color: var(--white);
+}
+
+/* Hero Section Start */
+#hero {
+    height: 740px;
+}
+
+#hero .hero-wrapper {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#hero .hero-wrapper .half-width {
+    width: 40%;
+    margin-top: 3%;
+}
+
+#hero .hero-wrapper .half-width:nth-child(1) {
+    padding-top: 120px;
+    margin-left: 2%;
+}
+
+#hero .hero-wrapper .half-width:nth-child(1) h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--black);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 130%;
+    letter-spacing: -3px;
+}
+
+#hero .hero-wrapper .half-width:nth-child(1) h1:nth-child(3) {
+    font-size: 57px;
+}
+
+#hero .hero-wrapper .half-width:nth-child(1) h5 {
+    padding-top: 50px;
+    font-size: 21px;
+    color: var(--gray);
+    line-height: 160%;
+    letter-spacing: -1px;
+    font-weight: 500;
+}
+
+#hero .hero-wrapper .half-width:nth-child(1) .btn {
+    margin-top: 40px;
+}
+
+#hero .hero-wrapper .half-width:nth-child(1) .orange-text {
+    color: var(--main-color);
+}
+
+#hero .hero-wrapper .half-width img {
+    width: 100%;
+    padding-top: 55px;
+}
+
+#hero .hero-wrapper .half-width:nth-child(2) {
+    position: relative;
+}
+
+#hero .hero-wrapper .half-width:nth-child(2) .hero-image {
+    position: absolute;
+    top: -143px;
+    left: -112px;
+}
+
+#hero .hero-wrapper .half-width:nth-child(2) .hero-image-dot {
+    position: absolute;
+    width: 208px;
+    height: 208px;
+    z-index: -1;
+    top: 316px;
+    left: 285px;
+}
+
+/* Hero Section End */
+
+
+
+/* Model Section Start */
+#model {
+    background: url(../images/model-background.png) no-repeat center center/cover;
+    height: 570px;
+    /* border: 2px solid green; */
+}
+
+#model .model-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+#model .model-wrapper .half-width {
+    width: 40%;
+}
+
+#model .model-wrapper .half-width:nth-child(1) img {
+    width: 60%;
+    padding-top: 60px;
+    margin-left: 125px;
+}
+
+#model .model-wrapper .half-width:nth-child(2) {
+    padding-top: 130px;
+    padding-right: 100px;
+    margin-right: 30px;
+
+}
+
+#model .model-wrapper .half-width:nth-child(2) h2 {
+    font-size: 40px;
+    color: var(--secondary-gray);
+    font-weight: 700;
+}
+
+#model .model-wrapper .half-width:nth-child(2) p {
+    color: var(--secondary-black);
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 40px;
+    line-height: 33px;
+}
+
+#model .model-wrapper .half-width:nth-child(2) .btn {
+    margin-top: 50px;
+}
+
+/* Model Section End */
+
+/* My Recipie Section Start */
+#recipie .recipie-wrapper .recipie-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+}
+
+#recipie .recipie-wrapper .recipie-header h2 {
+    font-size: 40px;
+    color: var(--secondary-gray);
+    font-weight: 700;
+}
+
+#recipie .recipie-wrapper .recipie-header p {
+    color: var(--secondary-black);
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 40px;
+    line-height: 33px;
+    text-align: center;
+}
+
+#recipie .recipie-wrapper .recipie-header .recipie-header-info {
+    width: 53%;
+    padding-left: 2%;
+}
+
+#recipie .recipie-wrapper .recipie-item {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 40px;
+}
+
+#recipie .recipie-wrapper .recipie-item .half-width {
+    width: 45%;
+    box-shadow: 10px 10px 40px gray;
+    border-radius: 10px;
+    height: 80%;
+}
+
+#recipie .recipie-wrapper .recipie-item .half-width .food-item-img-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#recipie .recipie-wrapper .recipie-item .half-width .food-item-img-wrapper img {
+    width: 510px;
+    height: 308px;
+    border-radius: 20px;
+}
+
+#recipie .recipie-wrapper .recipie-item .half-width .food-item-info {
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#recipie .recipie-wrapper .recipie-item .half-width .food-item-info h3 {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--secondary-black);
+}
+
+#recipie .recipie-wrapper .recipie-item .half-width .food-item-info p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-black);
+    margin-top: 13px;
+}
+
+/* My Recipie Section End */
+
+
+
+/* User Info Section Start */
+#user-info .user-info-wrapper {
+    margin-top: 85px;
+    margin-left: 87px;
+    padding: 100px 80px;
+    display: flex;
+    justify-content: space-around;
+    width: 87%;
+    height: 50px;
+    box-shadow: 10px 10px 40px gray;
+    border-radius: 10px;
+}
+
+#user-info .user-info-wrapper .info {
+    margin-top: -44px;
+}
+
+#user-info .user-info-wrapper .info h2 {
+    font-size: 48px;
+    color: var(--secondary-black);
+}
+
+#user-info .user-info-wrapper .info h6 {
+    font-size: 16px;
+    color: var(--secondary-black);
+    padding-top: 10px;
+}
+
+/* User Info Section End */
+
+
+/* Footer Section Start */
+footer {
+    height: 256px;
+    background-color: var(--footer-color);
+    margin-top: 85px;
+}
+
+footer .footer-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 55px;
+}
+
+footer .footer-info-wrapper h2 {
+    color: var(--footer-text-color);
+    font-weight: 900;
+}
+
+footer .footer-info-wrapper .eat {
+    color: var(--main-color);
+}
+
+footer .footer-info-wrapper h6 {
+    color: var(--white);
+    font-weight: 400;
+    padding-top: 45px;
+    letter-spacing: 2px;
+}
+
+/* Footer Section End */
